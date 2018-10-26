@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -e
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+set -x
+
+cd "$ROOT"
+if [[ -z "$CI" ]]; then
+  if ! pip show boiga | grep "$ROOT" >/dev/null; then
+    pip install --editable .
+  fi
+else
+  pip install .
+fi
+mypy .
+flake8
+pytest

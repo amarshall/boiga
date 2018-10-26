@@ -1,0 +1,15 @@
+# Boiga: type-safe functional Python
+
+Unlike most functional programming and monad libraries for Python, this is well-typed thanks to [PEP 484](https://www.python.org/dev/peps/pep-0484/) and [mypy](http://www.mypy-lang.org/).
+
+## Type-safety
+
+Boiga is only as type-safe as mypy permits. However, Boiga makes every attempt to ensure maximal type-safety. This includes:
+
+- Enabling various mypy flags to increase strictness
+- Type-checking all test code
+- Having tests which programatically run mypy and ensure that expected type-check failures do indeed fail to type-check
+
+## Why “Boiga”?
+
+Boiga is a genus of snake, often nicknamed “cat snakes”. The level of functional *cat*egory theory in this library is perhaps “un-Pythonic”. But it’s still a snake, just not a Python—a cat-eyed snake, perhaps. Also, most of the obvious package names were already taken.
