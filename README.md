@@ -13,3 +13,7 @@ Boiga is only as type-safe as mypy permits. However, Boiga makes every attempt t
 ## Why “Boiga”?
 
 Boiga is a genus of snake, often nicknamed “cat snakes”. The level of functional *cat*egory theory in this library is perhaps “un-Pythonic”. But it’s still a snake, just not a Python—a cat-eyed snake, perhaps. Also, most of the obvious package names were already taken.
+
+## Mypy bugs found
+
+- [Lambda as RHS for operator always gets inferred as Any](https://github.com/python/mypy/issues/5843)

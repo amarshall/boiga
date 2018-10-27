@@ -34,6 +34,9 @@ setup(
         'Topic :: Utilities',
         ],
     keywords=[],
-    install_requires=[],
+    python_requires='>= 3.6',
+    install_requires=[
+        'typing_extensions >=3.6.6,<4.0',
+        ],
     extras_require={},
     )

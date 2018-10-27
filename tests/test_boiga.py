@@ -1,5 +1,1 @@
-import boiga
-
-
-def test() -> None:
-    assert boiga.__version__
+pass
