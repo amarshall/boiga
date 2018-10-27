@@ -1,5 +1,7 @@
 # Boiga: type-safe functional Python
 
+[![Build Status](https://secure.travis-ci.org/amarshall/boiga.svg?branch=master)](https://travis-ci.org/amarshall/boiga)
+
 Unlike most functional programming and monad libraries for Python, this is well-typed thanks to [PEP 484](https://www.python.org/dev/peps/pep-0484/) and [mypy](http://www.mypy-lang.org/).
 
 ## Type-safety
