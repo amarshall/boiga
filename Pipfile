@@ -7,6 +7,7 @@ name = "pypi"
 flake8 = "*"
 mypy = "*"
 pytest = "*"
+pytest-cov = "*"
 pytest-xdist = "*"
 
 [dev-packages]

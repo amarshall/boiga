@@ -1,5 +1,7 @@
 *.egg-info
+.coverage
 .mypy_cache/
 .pytest_cache/
 /build
 /dist
+htmlcov/
