@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+set -x
+
+cd "$ROOT"
+pip install --upgrade setuptools wheel
+git fetch
+bumpversion "$1" setup.py src/boiga/__init__.py
+git push
+git push --tags
+python setup.py sdist bdist_wheel
+twine upload dist/*

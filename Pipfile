@@ -11,5 +11,7 @@ pytest-cov = "*"
 pytest-xdist = "*"
 
 [dev-packages]
+bumpversion = "*"
+twine = "*"
 
 [requires]

@@ -6,6 +6,6 @@ python:
   - '3.7-dev'
 install:
   - pip install pipenv
-  - pipenv install --dev --deploy
+  - pipenv install --deploy
 script:
   - pipenv run bin/test
