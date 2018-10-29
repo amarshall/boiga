@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 flake8 = "*"
+hypothesis = "*"
 mypy = "*"
 pytest = "*"
 pytest-cov = "*"
