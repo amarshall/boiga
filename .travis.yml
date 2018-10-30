@@ -8,4 +8,4 @@ install:
   - pip install pipenv
   - pipenv install --deploy
 script:
-  - pipenv run bin/test
+  - pipenv run bin/test --numprocesses=2
